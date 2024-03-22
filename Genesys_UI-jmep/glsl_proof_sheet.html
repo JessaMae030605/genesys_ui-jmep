@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL/SL Proof Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="glsl_proof_sheet.js" defer></script>
+</head>
+<body>
+    <div class="header" style="padding: 10px 20px; box-sizing: border-box;">
+        <h2>GL/SL PROOF SHEET</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="content"style="max-height: 450px; overflow-y: auto;">
+                    <h4>BRANCHES</h4>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="all_branches" value="">
+                        <label class="form-check-label" for="all_branches">All Branches</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_1" value="">
+                        <label class="form-check-label" for="branch_1">Branch 1</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_2" value="">
+                        <label class="form-check-label" for="branch_2">Branch 2</label>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_2A" value="">
+                            <label class="form-check-label" for="branch_2A">Sub-branch A</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_2B" value="">
+                            <label class="form-check-label" for="branch_2B">Sub-branch B</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_2C" value="">
+                            <label class="form-check-label" for="branch_2C">Sub-branch C</label>
+                        </div>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="chk_dropdown" value="">
+                        <div class="dropdown">
+                            <select class="form-control default-select">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_3" value="">
+                        <label class="form-check-label" for="branch_3">Branch 3</label>
+                    </div>
+
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="all_branches2" value="">
+                        <label class="form-check-label" for="all_branches2">All Branches</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_21" value="">
+                        <label class="form-check-label" for="branch_21">Branch 1</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_22" value="">
+                        <label class="form-check-label" for="branch_22">Branch 2</label>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_22A" value="">
+                            <label class="form-check-label" for="branch_22A">Sub-branch A</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_22B" value="">
+                            <label class="form-check-label" for="branch_22B">Sub-branch B</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input type="checkbox" class="form-check-input" id="branch_22C" value="">
+                            <label class="form-check-label" for="branch_22C">Sub-branch C</label>
+                        </div>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="chk_dropdown2" value="">
+                        <div class="dropdown">
+                            <select class="form-control default-select">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="branch_23" value="">
+                        <label class="form-check-label" for="branch_23">Branch 3</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4>DATE TO GENERATE</h4>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-success">View</button>
+                        <button type="button" class="btn btn-success">Print</button>
+                    </div>
+                </div>
+                <div class="table-container" style="max-height: 300px; overflow-y: auto; position: relative;">
+                    <table class="table table-striped table-responsive-md">
+                        <thead style="position: sticky; top: 0;">
+                            <tr>
+                                <th>DEBIT</th>
+                                <th>GL/SL ACCOUNT</th>
+                                <th>CREDIT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot style="position: sticky; bottom: 0;">
+                            <tr>
+                            <td></td>
+                            <td>TOTAL</td>
+                            <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

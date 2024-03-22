@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Access and Supervisory Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="user_access_and_supervisory_template_assignment.js" defer></script>
+</head>
+<body>
+    <div class="header" style="padding: 10px 20px; box-sizing: border-box;">
+        <h2>User Access and Supervisory Template</h2>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="card-header" style="position: sticky;" id="table-header">
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="checkbox" class="form-check-input" id="boru_checkbox" value="">
+                        <label class="form-check-label" for="boru_checkbox">Branch or Unit</label>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" id="description">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body" style="height: 500px; overflow-y: auto;" id="table-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th>Branch</th>
+                                <th>User</th>
+                                <th>Access</th>
+                                <th>Supervisory</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>Branch 1</td>
+                                <td>User 1</td>
+                                <td>Access 1</td>
+                                <td>Supervisory1</td>
+                                <td><button type="button" class="btn btn-warning" id=""  style="margin-right: 5px;">Edit</button><button type="button" class="btn btn-danger light" id="">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer" style="position: sticky;" id="table-footer">
+                <div class="basic-form" style="float: right">
+                    <button type="button" class="btn btn-success" id="openDialog">Add</button>
+                </div>
+            </div>
+            <dialog id="myModal" data-modal-container class="border border-primary border-opacity-75 rounded">
+                <div class="modal-header">
+                    <h4 class="modal-title">User Access and Supervisory Template</h4>
+                    <button type="button" class="close" data-dismiss="modal" id="closeDialog">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="row">
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <h6 class="mb-0">Branch</h6>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="dropdown">
+                                        <select class="form-control default-select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <h6 class="mb-0">User</h6>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="dropdown">
+                                        <select class="form-control default-select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <h6 class="mb-0">Access</h6>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="dropdown">
+                                        <select class="form-control default-select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <h6 class="mb-0">Supervisory</h6>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="dropdown">
+                                        <select class="form-control default-select">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="margin-top: 10px;">
+                        <button type="button" class="btn btn-primary" id="saveButton">Save</button>
+                        <button type="button" class="btn btn-danger" id="discardButton">Discard</button>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
