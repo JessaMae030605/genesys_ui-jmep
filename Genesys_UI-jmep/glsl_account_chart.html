@@ -17,11 +17,14 @@
             <thead style="position: sticky; top: 0;">
                 <tr>
                     <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                        id="accountIdentifier">
+                        <label>Account Identifier</label>
+                    </th>
+                    <th>
+                        <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                        id="accountGroup">
                         +
                         </button>
-                        <label for="accountIdentifier">Account Identifier</label>
+                        <label for="accountGroup">Account Group</label>
                         <div class="dialog-overlay" style="display: none; position: fixed; width: 100%; height: 100%;" id="dialogOverlay">
                             <div class="dialog-box" style="position: fixed; top: 40%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 5px;">
                                 <div class="row">
@@ -52,105 +55,14 @@
                                     </div>
                                 </div>
                                 <div class="btn-container" style="float: right;">
-                                    <button class="btn btn-primary" id="saveBtn">Save</button>
+                                    <button class="btn btn-success" id="saveBtn">Save</button>
                                     <button class="btn btn-danger" id="closeBtn">Close</button>
                                 </div>
                             </div>
                         </div>
                     </th>
                     <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                        id="accountGroup">
-                        +
-                        </button>
-                        <label for="accountGroup">Account Group</label>
-                        <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 1000px; height: 400px; z-index: 1;" id="myDialog">
-                            <div class="row">
-                                <div class="row md-6">
-                                    <div class="col-md-4">
-                                        <h6 class="mb-0">Group Description</h6>
-                                    </div>
-                                    <div class="col-md-8" style="margin-bottom: 5px;">
-                                        <input type="text" class="form-control" id="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="table-responsive" style="height: 300px; overflow-y: auto;">
-                                    <table class="table table-striped table-responsive-md">
-                                        <thead style="position: sticky; top: 0;">
-                                            <tr>
-                                                <th colspan="2" style="text-align: center;">
-                                                    <button class="dialogOverlay" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                                                    id="generalLedgerAccountDescription">
-                                                    +
-                                                    </button>
-                                                    <label for="generalLedgerAccountDescription">Account Group Description</label>
-                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_01">
-                                                        <div class="row">
-                                                            <div class="col-md-12" style="margin-bottom: 15px;">
-                                                                <input type="text" class="form-control" id="" placeholder="Type/show here the subsidiary account to add or modify">
-                                                            </div>
-                                                        </div>
-                                                        <div class="btn-container" style="float: right;">
-                                                            <button class="btn btn-primary" id="topSaveBtn">Save</button>
-                                                            <button class="btn btn-danger" id="topCloseBtn">Close</button>
-                                                        </div>
-                                                    </dialog>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <body>
-                                            <tr>
-                                                <td>Group 01</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Group 02</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Group 03</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Group 01</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Group 02</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Group 03</td>
-                                                <td style="text-align: right;">
-                                                    <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
-                                                    <button type="button" class="btn btn-danger light" id="">Delete</button>
-                                                </td>
-                                            </tr>
-                                        </body>
-                                    </table>
-                                </div>
-                            </div>
-                        </dialog>
-                    </th>
-                    <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                        <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
                         id="generalAccount">
                         +
                         </button>
@@ -198,19 +110,19 @@
                                         <thead style="position: sticky; top: 0;">
                                             <tr>
                                                 <th colspan="2" style="text-align: center;">
-                                                    <button class="dialogOverlay" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                                                    id="subsidiaryLedger01">
+                                                    <button class="dialogOverlay" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                                    id="generalLedgerAccountDescription">
                                                     +
                                                     </button>
-                                                    <label for="subsidiaryLedger01">General Ledger Account Description</label>
-                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_02">
+                                                    <label for="generalLedgerAccountDescription">General Ledger Account Description</label>
+                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_01">
                                                         <div class="row">
                                                             <div class="col-md-12" style="margin-bottom: 15px;">
                                                                 <input type="text" class="form-control" id="" placeholder="Type/show here the subsidiary account to add or modify">
                                                             </div>
                                                         </div>
                                                         <div class="btn-container" style="float: right;">
-                                                            <button class="btn btn-primary" id="topSaveBtn01">Save</button>
+                                                            <button class="btn btn-success" id="topSaveBtn01">Save</button>
                                                             <button class="btn btn-danger" id="topCloseBtn01">Close</button>
                                                         </div>
                                                     </dialog>
@@ -267,7 +179,7 @@
                         </dialog>
                     </th>
                     <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                        <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
                         id="subsidiary01">
                         +
                         </button>
@@ -332,19 +244,19 @@
                                         <thead style="position: sticky; top: 0;">
                                             <tr>
                                                 <th colspan="2" style="text-align: center;">
-                                                    <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                                                    id="subsidiaryLedger02">
+                                                    <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                                    id="subsidiaryLedger01">
                                                     +
                                                     </button>
-                                                    <label for="subsidiaryLedger02">Subsidiary Ledger 01 Description</label>
-                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_03">
+                                                    <label for="subsidiaryLedger01">Subsidiary Ledger 01 Description</label>
+                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_02">
                                                         <div class="row">
                                                             <div class="col-md-12" style="margin-bottom: 15px;">
                                                                 <input type="text" class="form-control" id="" placeholder="Type/show here the subsidiary account to add or modify">
                                                             </div>
                                                         </div>
                                                         <div class="btn-container" style="float: right;">
-                                                            <button class="btn btn-primary" id="topSaveBtn02">Save</button>
+                                                            <button class="btn btn-success" id="topSaveBtn02">Save</button>
                                                             <button class="btn btn-danger" id="topCloseBtn02">Close</button>
                                                         </div>
                                                     </dialog>
@@ -401,7 +313,7 @@
                         </dialog>
                     </th>
                     <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                        <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
                         id="subsidiary02">
                         +
                         </button>
@@ -483,19 +395,19 @@
                                         <thead style="position: sticky; top: 0;">
                                             <tr>
                                                 <th colspan="2" style="text-align: center;">
-                                                    <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
-                                                    id="subsidiaryLedger03">
+                                                    <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                                    id="subsidiaryLedger02">
                                                     +
                                                     </button>
-                                                    <labl for="subsidiaryLedger03">Subsidiary Ledger 02 Description</label>
-                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_04">
+                                                    <labl for="subsidiaryLedger02">Subsidiary Ledger 02 Description</label>
+                                                    <dialog data-modal-container class="border border-primary border-opacity-75 rounded" style="width: 475px; height: 150px; position: relative; z-index: 999;" id="myTopDialog_03">
                                                         <div class="row">
                                                             <div class="col-md-12" style="margin-bottom: 15px;">
                                                                 <input type="text" class="form-control" id="" placeholder="Type/show here the subsidiary account to add or modify">
                                                             </div>
                                                         </div>
                                                         <div class="btn-container" style="float: right;">
-                                                            <button class="btn btn-primary" id="topSaveBtn03">Save</button>
+                                                            <button class="btn btn-success" id="topSaveBtn03">Save</button>
                                                             <button class="btn btn-danger" id="topCloseBtn03">Close</button>
                                                         </div>
                                                     </dialog>
@@ -504,42 +416,42 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Subsidiary 01-Item 01</td>
+                                                <td>Subsidiary 02-Item 01</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 02</td>
+                                                <td>Subsidiary 02-Item 02</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 03</td>
+                                                <td>Subsidiary 02-Item 03</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 01</td>
+                                                <td>Subsidiary 02-Item 01</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 02</td>
+                                                <td>Subsidiary 02-Item 02</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 03</td>
+                                                <td>Subsidiary 02-Item 03</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
@@ -552,7 +464,7 @@
                         </dialog>
                     </th>
                     <th>
-                        <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                        <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
                         id="subsidiary03">
                         +
                         </button>
@@ -651,7 +563,7 @@
                                         <thead style="position: sticky; top: 0;">
                                             <tr>
                                                 <th colspan="2" style="text-align: center;">
-                                                    <button type="button" style="background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;"
+                                                    <button type="button" style="background-color: #0d6efd; color: white; border: none; border-radius: 5px; cursor: pointer;"
                                                     id="subsidiaryLedger03">
                                                     +
                                                     </button>
@@ -663,8 +575,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="btn-container" style="float: right;">
-                                                            <button class="btn btn-primary" id="topSaveBtn03">Save</button>
-                                                            <button class="btn btn-danger" id="topCloseBtn03">Close</button>
+                                                            <button class="btn btn-success" id="topSaveBtn04">Save</button>
+                                                            <button class="btn btn-danger" id="topCloseBtn04">Close</button>
                                                         </div>
                                                     </dialog>
                                                 </th>
@@ -672,42 +584,42 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Subsidiary 01-Item 01</td>
+                                                <td>Subsidiary 03-Item 01</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 02</td>
+                                                <td>Subsidiary 03-Item 02</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 03</td>
+                                                <td>Subsidiary 03-Item 03</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 01</td>
+                                                <td>Subsidiary 03-Item 01</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 02</td>
+                                                <td>Subsidiary 03-Item 02</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>Subsidiary 01-Item 03</td>
+                                                <td>Subsidiary 03-Item 03</td>
                                                 <td style="text-align: right;">
                                                     <button type="button" class="btn btn-warning" id="" style="margin-right: 5px;">Edit</button>
                                                     <button type="button" class="btn btn-danger light" id="">Delete</button>
@@ -763,7 +675,7 @@
                     <td>SL03-item 05</td>
                 </tr>
                 <tr>
-                    <td>Asset</td>
+                    <td>Asset1</td>
                     <td>Group1</td>
                     <td>GL item 01</td>
                     <td>SL01-item 01</td>
@@ -771,7 +683,7 @@
                     <td>SL03-item 01</td>
                 </tr>
                 <tr>
-                    <td>Liability</td>
+                    <td>Liability1</td>
                     <td>Group 2</td>
                     <td>GL item 02</td>
                     <td>SL01-item 02</td>
@@ -779,7 +691,7 @@
                     <td>SL03-item 02</td>
                 </tr>
                 <tr>
-                    <td>Equity</td>
+                    <td>Equity1</td>
                     <td>Group 3</td>
                     <td>GL item 03</td>
                     <td>SL01-item 03</td>
@@ -787,7 +699,7 @@
                     <td>SL03-item 03</td>
                 </tr>
                 <tr>
-                    <td>Expense</td>
+                    <td>Expense1</td>
                     <td>Group 4</td>
                     <td>GL item 04</td>
                     <td>SL01-item 04</td>
@@ -795,52 +707,12 @@
                     <td>SL03-item 04</td>
                 </tr>
                 <tr>
-                    <td>Temporary</td>
+                    <td>Temporary1</td>
                     <td>Group 5</td>
                     <td>GL item 05</td>
                     <td>SL01-item 05</td>
                     <td>SL02-item 05</td>
                     <td>SL03-item 05</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                 </tr>
             </tbody>
         </table>
